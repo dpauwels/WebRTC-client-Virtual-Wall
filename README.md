@@ -11,12 +11,12 @@ run ``` sudo ./client_config.sh ```
 ## WebRTC statistics
 - in Chrome: go to chrome://webrtc-internals to see realtime WebRTC events and graphs
 - logging to file: each second, the client logs the following bitrates:
-  googActualEncBitrate: 
-  googAvailableSendBandwidth: 
-  googAvailableReceiveBandwidth: 
-  googRetransmitBitrate: 
-  googTargetEncBitrate: 
-  googBucketDelay: 
-  googTransmitBitrate: 
+  - googActualEncBitrate
+  - googAvailableSendBandwidth 
+  - googAvailableReceiveBandwidth: 
+  - googRetransmitBitrate: 
+  - googTargetEncBitrate: 
+  - googBucketDelay: 
+  - googTransmitBitrate: 
 
   These logs are both written to the console and a file (debugout.txt). On default, this file is downloaded 10 seconds after the page is loaded. This time can be set with the parameter log_duration in seconds. E.g: ``` https://server:8443/r/1?log_duration=60 ```
