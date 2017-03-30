@@ -4,6 +4,7 @@ sudo dpkg -i google-chrome*.deb; sudo apt-get -f install -y && sudo dpkg -i goog
 sudo apt-get install -y xvfb libnss3-tools
 
 xvfb-run -a google-chrome &> /dev/null &
+sleep 10
 sudo kill $(ps aux | grep xvfb | awk '{print $2}') &> /dev/null
 sudo kill $(ps aux | grep chrome | awk '{print $2}') &> /dev/null
 
