@@ -1,5 +1,8 @@
 # WebRTC-client-Virtual-Wall
-## Install Google Chrome and xvfb
+## Download
+git clone https://github.ugent.be/dripauwe/WebRTC-client-Virtual-Wall.git
+
+## Install Google Chrome, xvfb and the certificate
 run ``` ./client_config.sh ```
 
 ## Run test
