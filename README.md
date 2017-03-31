@@ -1,6 +1,6 @@
 # WebRTC-client-Virtual-Wall
 ## Install Google Chrome and xvfb
-run ``` sudo ./client_config.sh ```
+run ``` ./client_config.sh ```
 
 ## Run test
 - With fake video capture: ``` google-chrome --no-first-run --no-default-brower-check --disable-translate --use-fake-ui-for-media-stream --use-fake-device-for-media-stream "https://server:8443"```
