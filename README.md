@@ -10,6 +10,7 @@ run ``` ./client_config.sh ```
 - With fake video capture from file (only .y4m format is supported): ``` google-chrome --no-first-run --no-default-brower-check --disable-translate --use-fake-ui-for-media-stream --use-fake-device-for-media-stream --use-file-for-fake-video-capture=soccer.y4m "https://server:8443"```
   (I have a test video in .y4m but it's too large (2.2 GB) to put on github)
 - run in headless mode: ``` xvfb-run -a google-chrome ... ``` 
+- Select a room: e.g room number 1: ``` "https://server:8443/r/1" ```
 
 ## WebRTC statistics
 - in Chrome: go to chrome://webrtc-internals to see realtime WebRTC events and graphs
