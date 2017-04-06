@@ -17,10 +17,7 @@ run ``` ./client_config.sh ```
 - logging to file: each second, the client logs the following bitrates:
   - googActualEncBitrate
   - googAvailableSendBandwidth 
-  - googAvailableReceiveBandwidth 
-  - googRetransmitBitrate
-  - googTargetEncBitrate 
-  - googBucketDelay
-  - googTransmitBitrate 
 
-  These logs are both written to the console and a file (debugout.txt). On default, this file is downloaded 10 seconds after the page is loaded. This time can be set with the parameter log_duration in seconds. E.g: ``` https://server:8443/r/1?log_duration=60 ```
+  These logs are both written to the console and a file (debugout.txt).
+  - On default, this file is downloaded 10 seconds after the page is loaded. This time can be set with the parameter log_duration in seconds. E.g: ``` https://server:8443/r/1?log_duration=60 ```
+  - It is possible to log every available statistic every second. Set parameter ``` full_log=true ``` in the URL
