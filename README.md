@@ -21,3 +21,5 @@ run ``` ./client_config.sh ```
   These logs are both written to the console and a file (debugout.txt).
   - On default, this file is downloaded 10 seconds after the page is loaded. This time can be set with the parameter log_duration in seconds. E.g: ``` https://server:8443/r/1?log_duration=60 ```
   - It is possible to log every available statistic every second. Set parameter ``` full_log=true ``` in the URL
+
+- Enable low-level logging in google-chrome: add the flags ``` --enable-logging --v=1 ```. The log file will be created in $HOME/.config/google-chrome/chrome_debug.log
