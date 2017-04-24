@@ -23,3 +23,11 @@ run ``` ./client_config.sh ```
   - It is possible to log every available statistic every second. Set parameter ``` full_log=true ``` in the URL
 
 - Enable low-level logging in google-chrome: add the flags ``` --enable-logging --v=1 ```. The log file will be created in $HOME/.config/google-chrome/chrome_debug.log
+- In Google Chrome v58, our certificate is not excepted. For a workaround:
+    - ``` sudo mkdir /etc/opt/chrome/policies/managed ```
+    - ``` touch /etc/opt/chrome/policies/managed/test_policy.json ```
+    - add the following content:
+      ```  {
+              "EnableCommonNameFallbackForLocalAnchors": true
+            }
+      ```
